@@ -457,6 +457,7 @@ img.cycu:hover{
     opacity: 1;
     visibility: visible;
 }
+
 @media screen and (max-width:800px) {
 
     article,
