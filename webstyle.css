@@ -57,7 +57,7 @@ nav{
 nav ul{
     margin:auto;
     position:absolute;
-    left: 11.5cm;
+    left: 13cm;
     top:16cm;
 }
 nav li{
@@ -65,15 +65,16 @@ nav li{
     display:inline-block;
 }
 
-article{
+.introduction{
     float: left;
-    position: relative;
+    position:relative;
     width: 65%;
+    height: 20%;
 }
-aside {
+.rightintroduction{
+    position: relative;
     float: right;
-    text-align: center;
-    width: 30%;
+    width: 35%;
 }
 .reminder{
     padding: 40px;
@@ -87,7 +88,8 @@ aside {
 .reminder_h1{
     font-family: 'Times New Roman', Times, serif;
     position:absolute;
-    text-align:left;
+    top:3.5cm;
+    left:2cm;
     font-size: 28px;
     font-style:italic;
     line-height: 65px;
@@ -102,7 +104,7 @@ aside {
 }
 .leftintro img{
     border-radius: 5cm;
-    width: 200px;  
+    width: 200px;
 }
 .intro{
     position:relative;
@@ -112,25 +114,22 @@ aside {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .skill{
-    text-align: center;
+    position:none;
     padding-left:7cm;
-      padding-right: 2.5cm;
+      padding-right:7cm;
+      padding-top: 2cm;
       padding-bottom: 2cm;
       border-radius: 30px;
-}
-.skill p {
-    position: absolute;
-    left:13cm;
-    color: rgb(231, 214, 213);
+      
 }
 
-/*進度條*/
 .skill_h1{
     list-style: none;
     padding:50px;
     background-color: #958b82;
     border-radius: 50px;
     opacity:unset;
+    border-radius: 30px;
 
 }
 .box{
@@ -153,49 +152,49 @@ aside {
     border: #5f5750 2px solid;
     overflow: hidden;
     position: relative;
-    left:6cm;
+    left:4.5cm;
   }
   
 #sk1 {
-    height:100%;
-    width: 100%;
-    background-color:#877a70;
+    height: 50px;
+    width: 75%;
+    background-color:#5f4b3e;
     animation: ski1 5s ease;
     animation-iteration-count: infinite;
 }
 #sk2 {
-    height:100%;
-    width: 100%;
-    background-color:#877a70;
-    animation: ski1 5s ease;
+    height:  50px;
+    width: 80%;
+    background-color: #5f4b3e;
+    animation: ski2 5s ease;
     animation-iteration-count: infinite;
 }
 #sk3 {
-    height:100%;
-    width: 100%;
-    background-color:#877a70;
-    animation: ski1 5s ease;
+    height:  50px;
+    width: 65%;
+    background-color: #5f4b3e;
+    animation: ski3 5s ease;
     animation-iteration-count: infinite;
 }
 #sk4 {
-    height:100%;
-    width: 100%;
-    background-color:#877a70;
-    animation: ski1 5s ease;
+    height:  50px;
+    width: 70%;
+    background-color: #5f4b3e;
+    animation: ski4 5s ease;
     animation-iteration-count: infinite;
 }
 #sk5 {
-   height:100%;
-    width: 100%;
-    background-color:#877a70;
-    animation: ski1 5s ease;
+    height:  50px;
+    width: 95%;
+    background-color: #5f4b3e;
+    animation: ski5 5s ease;
     animation-iteration-count: infinite;
 }
 #sk6 {
-    height:100%;
-    width: 100%;
-    background-color:#877a70;
-    animation: ski1 5s ease;
+    height:  50px;
+    width: 80%;
+    background-color: #5f4b3e;
+    animation: ski6 5s ease;
     animation-iteration-count: infinite;
 }
 
@@ -205,7 +204,7 @@ aside {
     }
   
     100% {
-      width: 80%;
+      width: 75%;
     }
 }
 @keyframes ski2 {
@@ -214,7 +213,7 @@ aside {
     }
   
     100% {
-      width: 70%;
+      width: 80%;
     }
 }
 @keyframes ski3 {
@@ -223,7 +222,7 @@ aside {
     }
   
     100% {
-      width: 72%;
+      width: 65%;
     }
 }
 @keyframes ski4 {
@@ -232,7 +231,7 @@ aside {
     }
   
     100% {
-      width: 86%;
+      width: 70%;
     }
 }
 @keyframes ski5 {
@@ -250,20 +249,23 @@ aside {
     }
   
     100% {
-      width: 70%;
+      width: 80%;
     }
 }
+.time{
+    border-right: #5f4b3e 2px solid;
+    margin: 0 5px;
+}
 .education{
-    padding:4cm;
+    padding:2cm;
     font-size: 10mm; 
     font-family: 'Times New Roman', Times, serif;
     text-align: left;
+    position: relative;
+    left:2cm;
 
 }
-.time{
-    border-right: #b17750 2px solid;
-    margin: 0 5px;
-}
+
 .金星小學{
     float: left;
     position: absolute;
@@ -301,12 +303,8 @@ aside {
     padding:1%;
 }
 img.kimsen{
-    position:relative;
-    float: right;
-    margin-right:5cm;
     border-radius: 3px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    bottom:6cm;
 }
 img.kimsen:hover{
     transform: scale(1.08);
@@ -314,12 +312,8 @@ img.kimsen:hover{
     z-index: 3;
 }
 img.jitsin{
-    position:absolute;
-    text-align: right;
-    right:5cm;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
     border-radius: 3px;
-    bottom:6cm;
 }
 img.jitsin:hover{
     transform: scale(1.08);
@@ -327,12 +321,8 @@ img.jitsin:hover{
     z-index: 5;
 }
 img.cycu{
-    position:absolute;
-    text-align: right;
-    right:1cm;
     border-radius: 3px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    bottom:6cm;
 }
 img.cycu:hover{
     transform: scale(1.08);
@@ -346,8 +336,7 @@ img.cycu:hover{
     margin: auto;
     background-color: #696764;
     text-align: center;
-    left: 20%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 30px;
   }
   
@@ -410,8 +399,8 @@ img.cycu:hover{
   
   }
   .container1{
-    width: 100%;
     height: 500px;
+    position: relative;
     padding: 0px 40px;
     display: flex;
     align-items: center;
@@ -459,21 +448,9 @@ img.cycu:hover{
     visibility: visible;
 }
 
-@media screen and (max-width:800px) {
-
-    article,
-    aside {
-        float: none;
-        width: 100%;
-    }
-
-    .h1 {
-        padding: 10px;
-        margin: 15px 0px;
-    }
-
-    .img {
-        max-width: 100%;
-        height: 90%;
-    }
+footer {
+    background-color: #656161;
+    text-align: center;
+    color: #ffffff;
+    padding: 30px;
 }
