@@ -67,6 +67,7 @@ nav li{
 
 article{
     float: left;
+    position: relative;
     width: 65%;
 }
 aside {
@@ -300,9 +301,9 @@ aside {
     padding:1%;
 }
 img.kimsen{
-    position:absolute;
-    text-align: right;
-    right:8cm;
+    position:relative;
+    float: right;
+    margin-right:5cm;
     border-radius: 3px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
     bottom:6cm;
