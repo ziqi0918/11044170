@@ -457,3 +457,21 @@ img.cycu:hover{
     opacity: 1;
     visibility: visible;
 }
+@media screen and (max-width:800px) {
+
+    article,
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    .h1 {
+        padding: 10px;
+        margin: 15px 0px;
+    }
+
+    .img {
+        max-width: 100%;
+        height: 90%;
+    }
+}
